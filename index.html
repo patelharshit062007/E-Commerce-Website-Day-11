@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopHub - E-Commerce Website (INR Variant)</title>
+</head>
+<body>
+
+    <!-- ==========================================
+         HEADER & NAVBAR SECTION
+         ========================================== -->
+    <header>
+        <nav>
+            <!-- Brand Logo -->
+            <div>
+                <h2>ShopHub</h2>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#products">Shop</a></li>
+                <li><a href="#offers">Deals</a></li>
+                <li><a href="#footer">About</a></li>
+            </ul>
+
+            <!-- Search Bar & Cart Icon -->
+            <div>
+                <form onsubmit="event.preventDefault(); alert('Search functionality demo');">
+                    <input type="text" placeholder="Search products..." required>
+                    <button type="submit">Search</button>
+                </form>
+                <div>
+                    <a href="#products">🛒 Cart (0)</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <!-- ==========================================
+             HERO / BANNER SECTION (#hero)
+             ========================================== -->
+        <section id="hero">
+            <div>
+                <p><strong>50% OFF</strong></p>
+                <h1>Best Products, Best Prices</h1>
+                <p>Discover amazing products at unbeatable prices.</p>
+                <a href="#products">
+                    <button type="button">Shop Now</button>
+                </a>
+            </div>
+            <div>
+                <!-- Real Product Image (Unsplash) -->
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" alt="Featured Product Banner" width="300" height="200">
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- ==========================================
+             OFFERS & HIGHLIGHTS SECTION (#offers)
+             ========================================== -->
+        <section id="offers">
+            <ul>
+                <!-- Free Shipping context adjusted for local context -->
+                <li>🚚 <strong>Free Shipping:</strong> On orders over ₹2,500</li>
+                <li>🔒 <strong>Secure Payment:</strong> 100% secure checkout</li>
+                <li>🔄 <strong>Easy Returns:</strong> 30-day money-back guarantee</li>
+                <li>🎧 <strong>24/7 Support:</strong> We are here to help</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- ==========================================
+             CATEGORIES SECTION (#categories)
+             ========================================== -->
+        <section id="categories">
+            <h2>Shop by Category</h2>
+            <div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?w=150&q=80" alt="Electronics" width="100" height="100">
+                    <h3>Electronics</h3>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=150&q=80" alt="Fashion" width="100" height="100">
+                    <h3>Fashion</h3>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=150&q=80" alt="Footwear" width="100" height="100">
+                    <h3>Footwear</h3>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=150&q=80" alt="Accessories" width="100" height="100">
+                    <h3>Accessories</h3>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- ==========================================
+             PRODUCT LISTING SECTION (#products)
+             ========================================== -->
+        <section id="products">
+            <h2>Featured Products</h2>
+            <div>
+                
+                <!-- Product Card 1 -->
+                <div>
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=200&q=80" alt="Running Sneakers" width="150" height="150">
+                    <h3>Running Sneakers</h3>
+                    <!-- Conversion: ~₹4,199 -->
+                    <p>Price: ₹4,199</p>
+                    <button type="button" onclick="alert('Item added to cart!');">Add to Cart</button>
+                </div>
+
+                <br>
+
+                <!-- Product Card 2 -->
+                <div>
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=200&q=80" alt="Wireless Smart Watch" width="150" height="150">
+                    <h3>Wireless Smart Watch</h3>
+                    <!-- Conversion: ~₹7,499 -->
+                    <p>Price: ₹7,499</p>
+                    <button type="button" onclick="alert('Item added to cart!');">Add to Cart</button>
+                </div>
+
+                <br>
+
+                <!-- Product Card 3 -->
+                <div>
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=200&q=80" alt="Bluetooth Headphones" width="150" height="150">
+                    <h3>Bluetooth Headphones</h3>
+                    <!-- Conversion: ~₹2,499 -->
+                    <p>Price: ₹2,499</p>
+                    <button type="button" onclick="alert('Item added to cart!');">Add to Cart</button>
+                </div>
+
+                <br>
+
+                <!-- Product Card 4 -->
+                <div>
+                    <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=200&q=80" alt="Travel Backpack" width="150" height="150">
+                    <h3>Travel Backpack</h3>
+                    <!-- Conversion: ~₹3,299 -->
+                    <p>Price: ₹3,299</p>
+                    <button type="button" onclick="alert('Item added to cart!');">Add to Cart</button>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- ==========================================
+         FOOTER SECTION (#footer)
+         ========================================== -->
+    <footer id="footer">
+        <div>
+            <h3>ShopHub</h3>
+            <p>Your one-stop destination for quality products at unbeatable prices.</p>
+        </div>
+
+        <div>
+            <h4>Contact Info</h4>
+            <p>Email: Patelharshit062007@gmail.com</p>
+            <p>Phone: +91 9328517842</p>
+            <p>Location: Ahemdabad, India </p>
+        </div>
+
+        <div>
+            <p>&copy; 2026 ShopHub E-Commerce. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
